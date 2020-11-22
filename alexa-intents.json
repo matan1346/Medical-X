@@ -1,0 +1,1115 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "medical x",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PatientIntent",
+                    "slots": [],
+                    "samples": [
+                        "open patient data ",
+                        "open patient findings ",
+                        "open patient details "
+                    ]
+                },
+                {
+                    "name": "AddPatientIntent",
+                    "slots": [
+                        {
+                            "name": "patientName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "her name is {patientName}",
+                                "his name is {patientName}",
+                                "patient name is {patientName}",
+                                "the patient name is {patientName}",
+                                "{patientName}"
+                            ]
+                        },
+                        {
+                            "name": "patientID",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "identity {patientID}",
+                                "identity number {patientID}",
+                                "patient identity number {patientID}",
+                                "patient id {patientID}",
+                                "{patientID}"
+                            ]
+                        },
+                        {
+                            "name": "pulse",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "his pulse is {pulse}",
+                                "{patientName} s  pulse is {pulse}",
+                                "the patient pulse is {pulse}",
+                                "{pulse} pulse",
+                                "{pulse}"
+                            ]
+                        },
+                        {
+                            "name": "breathsPerMinute",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "she takes {breathsPerMinute} breaths per minute",
+                                "he takes {breathsPerMinute} breaths per minute",
+                                "{patientName} takes {breathsPerMinute} breaths per minute",
+                                "the amount of breaths is {breathsPerMinute}",
+                                "{breathsPerMinute} breaths per minute",
+                                "{breathsPerMinute}"
+                            ]
+                        },
+                        {
+                            "name": "sugarLevel",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "glucose level is {sugarLevel}",
+                                "the sugar level is {sugarLevel}",
+                                "{sugarLevel} sugar level",
+                                "{sugarLevel}"
+                            ]
+                        },
+                        {
+                            "name": "allergies",
+                            "type": "allergies"
+                        },
+                        {
+                            "name": "medicines",
+                            "type": "medicines"
+                        },
+                        {
+                            "name": "reporterName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "reporter name is {reporterName}",
+                                "my name is {reporterName}",
+                                "{reporterName}"
+                            ]
+                        },
+                        {
+                            "name": "tempFirstNumber",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "the temperature is {tempFirstNumber} point {tempSecondNumber}",
+                                "{tempFirstNumber} point {tempSecondNumber}",
+                                "the patient's body temperature is {tempFirstNumber} point {tempSecondNumber}"
+                            ]
+                        },
+                        {
+                            "name": "tempSecondNumber",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "bloodSystolic",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "the patient's blod presure is {bloodSystolic} over {bloodDiastolic}",
+                                "{bloodSystolic} over {bloodDiastolic}"
+                            ]
+                        },
+                        {
+                            "name": "bloodDiastolic",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{bloodSystolic} over {bloodDiastolic}",
+                                "the patient's blod presure is {bloodSystolic} over {bloodDiastolic}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "add patient data blood pressure {bloodSystolic} over {bloodDiastolic} pulse {pulse} breathing per minute {breathsPerMinute} sugar level {sugarLevel} body temperature {tempFirstNumber} point {tempSecondNumber} allergies {allergies} and medicinies {medicines}",
+                        "new patient details",
+                        "add new patient",
+                        "new patient",
+                        "add patient data patient name {patientName}  id number {patientID} blood pressure {bloodSystolic} over {bloodDiastolic} pulse {pulse} breathing per minute {breathsPerMinute} sugar level {sugarLevel} body temperature {tempFirstNumber} point {tempSecondNumber} allergies {allergies} and medicinies {medicines}",
+                        "add patient findings",
+                        "add patient informataion",
+                        "add patient data",
+                        "add patient"
+                    ]
+                },
+                {
+                    "name": "GetPatientIntent",
+                    "slots": [
+                        {
+                            "name": "patientName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "the patient name is {patientName}",
+                                "{patientName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "get patient details of {patientName}",
+                        "get patient findings",
+                        "get patient information",
+                        "get patient data"
+                    ]
+                },
+                {
+                    "name": "GetAllPatientsIntent",
+                    "slots": [],
+                    "samples": [
+                        "get all data",
+                        "get all patients",
+                        "get all",
+                        "get all patients data"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RegisterPatientIDIntent",
+                    "slots": [
+                        {
+                            "name": "patientID",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "patient number is {patientID}",
+                                "patient identity number is {patientID}",
+                                "{patientID}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "id",
+                        "identity",
+                        "patient identity",
+                        "regiser patient identity",
+                        "register identity",
+                        "register id",
+                        "register identity {patientID}",
+                        "register id {patientID}",
+                        "register patient identity {patientID}",
+                        "register patient id {patientID}"
+                    ]
+                },
+                {
+                    "name": "RegisterPatientNameIntent",
+                    "slots": [
+                        {
+                            "name": "patientName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "her name is {patientName}",
+                                "his name is {patientName}",
+                                "the name is {patientName}",
+                                "patient name is {patientName}",
+                                "{patientName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "name {patientName}",
+                        "register name",
+                        "register patient name",
+                        "name",
+                        "patient name",
+                        "patient name {patientName}",
+                        "register name {patientName}",
+                        "register patient name {patientName}"
+                    ]
+                },
+                {
+                    "name": "RegisterPatientSugarIntent",
+                    "slots": [
+                        {
+                            "name": "sugarLevel",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "the sugar level is {sugarLevel}",
+                                "sugar level is {sugarLevel}",
+                                "{sugarLevel}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "register patient sugar",
+                        "register patient sugar level",
+                        "register sugar level",
+                        "sugar level",
+                        "register sugar",
+                        "sugar",
+                        "register sugar {sugarLevel}",
+                        "sugar level {sugarLevel}",
+                        "register patient sugar {sugarLevel}"
+                    ]
+                },
+                {
+                    "name": "RegisterPatientPulseIntent",
+                    "slots": [
+                        {
+                            "name": "pulse",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "pulse {pulse}",
+                                "pulse is {pulse}",
+                                "patient pulse is {pulse}",
+                                "{pulse}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "patient pulse",
+                        "register patient pulse",
+                        "pulse",
+                        "register pulse",
+                        "register pulse {pulse}",
+                        "register patient pulse {pulse}"
+                    ]
+                },
+                {
+                    "name": "RegisterPatientBreathsIntent",
+                    "slots": [
+                        {
+                            "name": "breathsPerMinute",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{breathsPerMinute} breaths per minute",
+                                "{breathsPerMinute} breaths",
+                                "breaths in minute {breathsPerMinute}",
+                                "breaths per minute {breathsPerMinute}",
+                                "breaths {breathsPerMinute}",
+                                "{breathsPerMinute}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "patient breaths per minute",
+                        "patient breaths",
+                        "breaths",
+                        "breaths per minute",
+                        "register breaths per minute",
+                        "register breaths per minute {breathsPerMinute}",
+                        "breaths per minute {breathsPerMinute}",
+                        "register breaths {breathsPerMinute}",
+                        "register patient breaths amount {breathsPerMinute}"
+                    ]
+                },
+                {
+                    "name": "RegisterPatientTempIntent",
+                    "slots": [
+                        {
+                            "name": "tempFirstNumber",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{tempFirstNumber} point {tempSecondNumber} temperature",
+                                "{tempFirstNumber} point {tempSecondNumber} body temperature",
+                                "temp {tempFirstNumber} point {tempSecondNumber}",
+                                "temperature {tempFirstNumber} point {tempSecondNumber}",
+                                "body temperature is {tempFirstNumber} point {tempSecondNumber}",
+                                "{tempFirstNumber}"
+                            ]
+                        },
+                        {
+                            "name": "tempSecondNumber",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "body temp",
+                        "temp",
+                        "register patient body temperature",
+                        "register patient temperature",
+                        "temperature",
+                        "body temperature",
+                        "register body temperature",
+                        "register temperature",
+                        "register temp",
+                        "register temp {tempFirstNumber} point {tempSecondNumber}",
+                        "register temperature {tempFirstNumber} point {tempSecondNumber}",
+                        "register patient temperature {tempFirstNumber} point {tempSecondNumber}"
+                    ]
+                },
+                {
+                    "name": "RegisterPatientBloodIntent",
+                    "slots": [
+                        {
+                            "name": "bloodSystolic",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "blood {bloodSystolic} over {bloodDiastolic}",
+                                "blood pressure is {bloodSystolic} over {bloodDiastolic}",
+                                "{bloodSystolic} over {bloodDiastolic}"
+                            ]
+                        },
+                        {
+                            "name": "bloodDiastolic",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "register patient blood pressure {bloodSystolic} point {bloodDiastolic}",
+                        "register blood {bloodSystolic} point {bloodDiastolic}",
+                        "register blood pressure {bloodSystolic} point {bloodDiastolic}",
+                        "blood pressure",
+                        "register blood pressure",
+                        "register blood pressure {bloodSystolic}",
+                        "register blood {bloodSystolic}",
+                        "register patient blood pressure {bloodSystolic}"
+                    ]
+                },
+                {
+                    "name": "RegisterPatientShowIntent",
+                    "slots": [],
+                    "samples": [
+                        "register show",
+                        "display current register",
+                        "display register",
+                        "display register details",
+                        "show register",
+                        "get current details"
+                    ]
+                },
+                {
+                    "name": "ResetRegisterPatientIntent",
+                    "slots": [],
+                    "samples": [
+                        "reset",
+                        "reset current details",
+                        "reset current register",
+                        "reset current data",
+                        "reset registration data",
+                        "reset patient register data",
+                        "reset register details",
+                        "reset patient",
+                        "reset register"
+                    ]
+                },
+                {
+                    "name": "RegisterSaveIntent",
+                    "slots": [],
+                    "samples": [
+                        "register save",
+                        "register save details",
+                        "save details",
+                        "save",
+                        "save register"
+                    ]
+                },
+                {
+                    "name": "RegisterPatientReporterIntent",
+                    "slots": [
+                        {
+                            "name": "reporterName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "samples": [
+                                "the reporter is {reporterName}",
+                                "reporter is {reporterName}",
+                                "reporter name is {reporterName}",
+                                "reporter name {reporterName}",
+                                "my name is {reporterName}",
+                                "reporter {reporterName}",
+                                "{reporterName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "register reporter {reporterName}",
+                        "reporter {reporterName}",
+                        "reporter name {reporterName}",
+                        "register reporter name {reporterName}",
+                        "reporter",
+                        "reporter name",
+                        "register reporter name",
+                        "register reporter"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.US_FIRST_NAME",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "matan"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "medicines",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "allergies",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "PatientIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                },
+                {
+                    "name": "AddPatientIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1223600428959"
+                    },
+                    "slots": [
+                        {
+                            "name": "patientName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1223600428959.264913269702"
+                            }
+                        },
+                        {
+                            "name": "patientID",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1446662579301.1204884556694"
+                            }
+                        },
+                        {
+                            "name": "pulse",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1223600428959.1295178355409"
+                            }
+                        },
+                        {
+                            "name": "breathsPerMinute",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1223600428959.1429637840527"
+                            }
+                        },
+                        {
+                            "name": "sugarLevel",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1223600428959.466893321392"
+                            }
+                        },
+                        {
+                            "name": "allergies",
+                            "type": "allergies",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "medicines",
+                            "type": "medicines",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "reporterName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1517902342050.93169897111"
+                            }
+                        },
+                        {
+                            "name": "tempFirstNumber",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.75990274823.741205133604"
+                            }
+                        },
+                        {
+                            "name": "tempSecondNumber",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "bloodSystolic",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.75990274823.561366611019"
+                            }
+                        },
+                        {
+                            "name": "bloodDiastolic",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1304947809043.471631311069"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "GetPatientIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "patientName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1085549271193.580608714084",
+                                "elicitation": "Elicit.Slot.1085549271193.580608714084"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPatientIDIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "patientID",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.247394475113.520713357882"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPatientNameIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "patientName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.415477135709.710842840865"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPatientSugarIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "sugarLevel",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.242485104691.1067591018044"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPatientPulseIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "pulse",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.602433447994.895560060888"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPatientBreathsIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "breathsPerMinute",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.431548545365.635094928583"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPatientTempIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "tempFirstNumber",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.305625830789.1172345313246"
+                            }
+                        },
+                        {
+                            "name": "tempSecondNumber",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPatientBloodIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "bloodSystolic",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.888336938839.156712367183"
+                            }
+                        },
+                        {
+                            "name": "bloodDiastolic",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPatientReporterIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "reporterName",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1391985889261.412881460703"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Slot.Validation.846776149349.1097231069570.1219667422366",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Hey {first_name} , how you doing?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.846776149349.1097231069570",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please tell me your name."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "You have not specified your name."
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.846776149349.1097231069570",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Is {first_name} is your truly name?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.221213610824.659729257833.118706215691",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Hey {first_name} , This name is not on the system, thank you."
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1223600428959",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": " So you are want to add new patient details with the follwing. patient name is {patientName} , identity number {patientID} , blood pressure {bloodSystolic} over {bloodDiastolic} ,  pulse {pulse} ,  breaths in minute {breathsPerMinute} , sugar level {sugarLevel} , body temperature {tempFirstNumber} point {tempSecondNumber} , is that right?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1223600428959.1194949519446",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please specify patient blood pressure"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is {patientName} 's  blood pressure?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1223600428959.1295178355409",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is {patientName} 's  pulse?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "please specify patient's pulse"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1223600428959.1429637840527",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify the num of breaths per minute"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "how many breaths per minute?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1223600428959.466893321392",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is {patientName} 's  sugar level?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "please specify the sugar level of the patient"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1223600428959.264913269702",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient name?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "please specify the patient name."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1085549271193.580608714084",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify patient name."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient name that you are looking for?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1085549271193.580608714084",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I have heard {patientName} , is that corect?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "So {patientName} is the name of patient, right?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.247394475113.520713357882",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify patient identity number"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient identity number?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.415477135709.710842840865",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify patient name"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient name?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.242485104691.1067591018044",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify sugar level"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the sugar level of the patient?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.602433447994.895560060888",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please scecify patient pulse"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient pulse?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.431548545365.635094928583",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify the amount of breaths per minute"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "how many breaths per minute?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the amount of breaths per minute?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.305625830789.1172345313246",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is the body temerature?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "please specify body temperature"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.888336938839.156712367183",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify blood pressure"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient blood pressure?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1446662579301.1204884556694",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify identity number"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient's identity number?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1517902342050.93169897111",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify reporter name"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "who is reporting?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1391985889261.412881460703",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify reporter name"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the reporter name?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.75990274823.741205133604",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specfy body temperature of this patient?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What is {patientName} 's  body temperature?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.75990274823.561366611019",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient's blood pressure?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "please specify blood pressure"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1304947809043.471631311069",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please specify blood pressure"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "what is the patient's blood pressure?"
+                    }
+                ]
+            }
+        ]
+    }
+}
